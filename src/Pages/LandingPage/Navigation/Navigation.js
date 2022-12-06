@@ -14,7 +14,7 @@ const Navigation = () => {
       <ContentContainer>
         <Brand>Sporty</Brand>
         <Menu>
-          <Item>FEATURES</Item>
+          <Item>POWERFULL</Item>
           <Item>ABOUT</Item>
           <Item>SERVICES</Item>
           <Item>GALLERY</Item>
