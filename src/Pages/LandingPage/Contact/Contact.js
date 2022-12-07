@@ -19,9 +19,9 @@ import {
   Span,
 } from "./Contact.styled";
 
-const Contact = () => {
+const Contact = (props) => {
   return (
-    <Wrapper>
+    <Wrapper ref={props.refProp}>
       <ContainerContent>
         <Grid>
           <Item1>

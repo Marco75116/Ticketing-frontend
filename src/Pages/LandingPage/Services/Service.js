@@ -17,9 +17,9 @@ import {
   Icon6,
 } from "./Service.styled";
 
-const Service = () => {
+const Service = (props) => {
   return (
-    <Wrapper>
+    <Wrapper ref={props.refProp}>
       <ContainerContent>
         <Title>Our Services</Title>
         <Description>

@@ -11,9 +11,9 @@ import {
   Position,
 } from "./Team.styled";
 
-const Team = () => {
+const Team = (props) => {
   return (
-    <TeamContainer>
+    <TeamContainer ref={props.refProp}>
       <ContentContainer>
         <Title>Upgrade your tickets with our team</Title>
         <Description>

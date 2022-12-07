@@ -8,19 +8,17 @@ import {
   Button,
 } from "./Navigation.styled";
 
-const Navigation = () => {
+const Navigation = (props) => {
   return (
     <NavigationContainer>
       <ContentContainer>
-        <Brand>Sporty</Brand>
+        <Brand onClick={() => props.header()}>Sporty</Brand>
         <Menu>
-          <Item>POWERFULL</Item>
-          <Item>ABOUT</Item>
-          <Item>SERVICES</Item>
-          <Item>GALLERY</Item>
-          <Item>TESTIMONIALS</Item>
-          <Item>TEAM</Item>
-          <Item>CONTACT</Item>
+          <Item onClick={() => props.powerfull()}>POWERFULL</Item>
+          <Item onClick={() => props.about()}>ABOUT</Item>
+          <Item onClick={() => props.services()}>SERVICES</Item>
+          <Item onClick={() => props.team()}>TEAM</Item>
+          <Item onClick={() => props.contact()}>CONTACT</Item>
         </Menu>
 
         <Button>LAUNCH APP</Button>

@@ -8,9 +8,9 @@ import {
 } from "./Header.styled";
 import imgSrc from "../../../assets/stadium.jpg";
 
-const Header = () => {
+const Header = (props) => {
   return (
-    <HeaderContainer>
+    <HeaderContainer ref={props.refProp}>
       <ContentContainer>
         <Title>Football makes people happy.</Title>
         <Description>

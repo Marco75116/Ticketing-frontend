@@ -15,7 +15,6 @@ export const ContentContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 14rem;
   padding: 15px;
 `;
 export const Brand = styled.div`
@@ -46,7 +45,7 @@ export const Button = styled.a`
   color: #fff;
   background-color: #5ca9fb;
   background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
-  padding: 14px 34px;
+  padding: 14px 0px;
   letter-spacing: 1px;
   margin: 0;
   font-size: 15px;
@@ -59,6 +58,6 @@ export const Button = styled.a`
   white-space: nowrap;
   vertical-align: middle;
   line-height: 1.3333333;
-  width: 6%;
+  width: 10rem;
   cursor: pointer;
 `;

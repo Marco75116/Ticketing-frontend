@@ -10,11 +10,12 @@ import {
   Icon1,
   Icon2,
   Icon3,
+  ScrollAncre,
 } from "./DescriptionBlockchain.styled";
 
-const DescriptionBlockchain = () => {
+const DescriptionBlockchain = (props) => {
   return (
-    <Wrapper>
+    <Wrapper ref={props.refProp}>
       <Title>Why should I manage ticketing with blockchain technology?</Title>
       <Grid>
         <Card>
