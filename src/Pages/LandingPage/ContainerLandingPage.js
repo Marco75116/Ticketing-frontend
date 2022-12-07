@@ -5,6 +5,7 @@ import Team from "./Team/Team";
 import DescriptionBlockchain from "./DescriptionBlockchain/DescriptionBlockchain";
 import Contact from "./Contact/Contact";
 import Service from "./Services/Service";
+import About from "./About/About";
 
 const ContainerLandingPage = () => {
   const contactRef = useRef(null);
@@ -36,6 +37,7 @@ const ContainerLandingPage = () => {
       />
       <Header refProp={headerRef} />
       <DescriptionBlockchain refProp={powerfullRef} />
+      <About refProp={aboutRef} />
       <Service refProp={servicesRef} />
       <Team refProp={teamRef} />
       <Contact refProp={contactRef} />

@@ -48,18 +48,31 @@ const Contact = (props) => {
               </Span>
               <p>12 Av. Léonard de Vinci, 92400 Courbevoie</p>
             </SectionInfo>
+
             <SectionInfo>
               <Span>
                 <Icon2 size="20" /> Phone
               </Span>
-              <p>05 56 87 76 54</p>
+              <p
+                style={{ cursor: "pointer" }}
+                onClick={() => navigator.clipboard.writeText("05 56 87 76 54")}
+              >
+                05 56 87 76 54
+              </p>
             </SectionInfo>
 
-            <SectionInfo>
+            <SectionInfo onFocus={() => console.log("IN")}>
               <Span>
                 <Icon3 size="20" /> Email
               </Span>
-              <p>Pastoutatis@gmail.com</p>
+              <p
+                style={{ cursor: "pointer" }}
+                onClick={() =>
+                  navigator.clipboard.writeText("Pastoutatis@gmail.com")
+                }
+              >
+                Pastoutatis@gmail.com
+              </p>
             </SectionInfo>
           </Item2>
         </Grid>

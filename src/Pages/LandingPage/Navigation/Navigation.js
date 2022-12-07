@@ -7,6 +7,7 @@ import {
   Menu,
   Button,
 } from "./Navigation.styled";
+import { Link, Outlet } from "react-router-dom";
 
 const Navigation = (props) => {
   return (
@@ -21,7 +22,18 @@ const Navigation = (props) => {
           <Item onClick={() => props.contact()}>CONTACT</Item>
         </Menu>
 
-        <Button>LAUNCH APP</Button>
+        <Button>
+          <Link
+            style={{
+              position: "absolute",
+              opacity: 0,
+            }}
+            to="/app"
+          >
+            LAUNCH APP
+          </Link>
+          LAUNCH APP
+        </Button>
       </ContentContainer>
     </NavigationContainer>
   );
