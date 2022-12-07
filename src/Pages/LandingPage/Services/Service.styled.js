@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { Create } from "styled-icons/ionicons-outline";
 import { QrCodeScan } from "@styled-icons/bootstrap/QrCodeScan";
 import { PresentationChartLine } from "@styled-icons/heroicons-solid/PresentationChartLine";
+import { CameraVideoFill, Check2 } from "styled-icons/bootstrap";
+import { Usdc } from "styled-icons/crypto";
 
 export const Wrapper = styled.div`
   padding: 100px 0;
@@ -58,10 +60,19 @@ export const Logo = styled.div`
 export const Icon1 = styled(Create)`
   color: white;
 `;
-export const Icon3 = styled(QrCodeScan)`
+export const Icon3 = styled(Check2)`
+  color: white;
+`;
+export const Icon2 = styled(QrCodeScan)`
   color: white;
 `;
 export const Icon4 = styled(PresentationChartLine)`
+  color: white;
+`;
+export const Icon5 = styled(CameraVideoFill)`
+  color: white;
+`;
+export const Icon6 = styled(Usdc)`
   color: white;
 `;
 export const CardTitle = styled.div`

@@ -7,12 +7,10 @@ import {
   Logo,
   CardTitle,
   CardDescription,
-  FontIcon,
   Icon1,
   Icon2,
   Icon3,
 } from "./DescriptionBlockchain.styled";
-import { faUser } from "@fortawesome/free-regular-svg-icons";
 
 const DescriptionBlockchain = () => {
   return (
@@ -35,10 +33,7 @@ const DescriptionBlockchain = () => {
             <Icon2 size="60" />
           </Logo>
           <CardTitle>Profitability</CardTitle>
-          <CardDescription>
-            Total control and insights over secondary market. Earn profits on
-            ticket resales.
-          </CardDescription>
+          <CardDescription>Earn profits on ticket resales.</CardDescription>
         </Card>
 
         <Card>
@@ -48,7 +43,7 @@ const DescriptionBlockchain = () => {
           <CardTitle>Fans</CardTitle>
           <CardDescription>
             Clear and verifiable data on ticket ownership to reward your true
-            fans
+            fans.
           </CardDescription>
         </Card>
       </Grid>

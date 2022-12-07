@@ -10,8 +10,11 @@ import {
   CardTitle,
   CardDescription,
   Icon1,
+  Icon2,
   Icon3,
   Icon4,
+  Icon5,
+  Icon6,
 } from "./Service.styled";
 
 const Service = () => {
@@ -20,7 +23,7 @@ const Service = () => {
       <ContainerContent>
         <Title>Our Services</Title>
         <Description>
-          We provide you an user friendly app to deal with our services
+          We provide you an user friendly app to deal with our services.
         </Description>
         <Grid>
           <Card>
@@ -35,9 +38,14 @@ const Service = () => {
           </Card>
 
           <Card>
-            <Logo></Logo>
+            <Logo>
+              <Icon2 size=" 60" />
+            </Logo>
             <CardTitle>Validate</CardTitle>
-            <CardDescription></CardDescription>
+            <CardDescription>
+              Check ticket ownership of the guests thanks to the scanner on our
+              application.
+            </CardDescription>
           </Card>
 
           <Card>
@@ -46,8 +54,7 @@ const Service = () => {
             </Logo>
             <CardTitle>Control</CardTitle>
             <CardDescription>
-              Control ticket ownership of the guests thanks to the scanner on
-              our application.
+              Total control and insights over secondary market.
             </CardDescription>
           </Card>
 
@@ -55,23 +62,32 @@ const Service = () => {
             <Logo>
               <Icon4 size="60" />
             </Logo>
-            <CardTitle>Dashboard</CardTitle>
+            <CardTitle>Meaningfull Dashboard</CardTitle>
             <CardDescription>
               Optimise your sales strategy with relevant informations displayed
-              on your personal dashboard.{" "}
+              on your personal dashboard.
             </CardDescription>
           </Card>
 
           <Card>
-            <Logo></Logo>
-            <CardTitle></CardTitle>
-            <CardDescription></CardDescription>
+            <Logo>
+              <Icon5 size="60" />
+            </Logo>
+            <CardTitle>Memories Studio</CardTitle>
+            <CardDescription>
+              A dedicated space to watch the best footage of the games your
+              users attended.
+            </CardDescription>
           </Card>
 
           <Card>
-            <Logo></Logo>
-            <CardTitle></CardTitle>
-            <CardDescription></CardDescription>
+            <Logo>
+              <Icon6 size="60" />
+            </Logo>
+            <CardTitle>Cryptocurrencies payement</CardTitle>
+            <CardDescription>
+              Accept the cryptos you want and boost your sales.
+            </CardDescription>
           </Card>
         </Grid>
       </ContainerContent>
