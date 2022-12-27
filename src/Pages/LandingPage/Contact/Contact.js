@@ -61,7 +61,7 @@ const Contact = (props) => {
               </p>
             </SectionInfo>
 
-            <SectionInfo onFocus={() => console.log("IN")}>
+            <SectionInfo onFocus={() => {}}>
               <Span>
                 <Icon3 size="20" /> Email
               </Span>

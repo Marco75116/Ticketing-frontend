@@ -34,7 +34,7 @@ const Team = (props) => {
           </Profil>
 
           <Profil>
-            <Img src="https://media-exp1.licdn.com/dms/image/C4D03AQHeoG3U3xdZOg/profile-displayphoto-shrink_200_200/0/1617010680745?e=1675900800&v=beta&t=kztpPaW53oHe2bOQqp9jDffRozviMZM5MkJPHv6f4s8" />
+            <Img src="https://media.licdn.com/dms/image/D4E03AQGY0cahgU8Q_Q/profile-displayphoto-shrink_800_800/0/1671451284126?e=1677715200&v=beta&t=i9iAg8XlcqlPQDISOkU_W427q4S5MvvkbD3jnYbKQNM" />
             <Name>Nasreddine Grihma</Name>
             <Position>Analyst at IBM</Position>
           </Profil>

@@ -6,7 +6,6 @@ import {
   Description,
   Button,
 } from "./Header.styled";
-import imgSrc from "../../../assets/stadium.jpg";
 
 const Header = (props) => {
   return (

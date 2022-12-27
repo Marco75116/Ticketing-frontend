@@ -8,7 +8,6 @@ export const NavigationContainer = styled.div`
   right: 0;
   left: 0;
   z-index: 10;
-  /* display: none; */
 `;
 export const ContentContainer = styled.div`
   display: flex;
@@ -38,6 +37,12 @@ export const Item = styled.div`
   padding: 8px 2px;
   font-weight: 400;
   font-family: "Lato", sans-serif;
+  transition: 0.1s;
+
+  border-bottom: ${(props) =>
+    props.selectedPart ? "3px solid transparent" : ""};
+  border-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  border-image-slice: 1;
 `;
 export const Button = styled.a`
   font-family: "Raleway", sans-serif;

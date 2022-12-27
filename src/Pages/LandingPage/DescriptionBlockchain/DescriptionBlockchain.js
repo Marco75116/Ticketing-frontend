@@ -10,7 +10,6 @@ import {
   Icon1,
   Icon2,
   Icon3,
-  ScrollAncre,
 } from "./DescriptionBlockchain.styled";
 
 const DescriptionBlockchain = (props) => {
