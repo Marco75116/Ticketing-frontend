@@ -3,7 +3,7 @@ import { Matic } from "styled-icons/crypto";
 
 export const Wrapper = styled.div`
   position: relative;
-  height: 40vh;
+  height: 400px;
 `;
 export const ContainerContent = styled.div`
   position: absolute;
