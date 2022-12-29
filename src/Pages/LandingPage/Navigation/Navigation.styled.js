@@ -37,11 +37,14 @@ export const Item = styled.div`
   padding: 8px 2px;
   font-weight: 400;
   font-family: "Lato", sans-serif;
-  transition: 0.1s;
+  transition: 0.2s;
 
   border-bottom: ${(props) =>
     props.selectedPart ? "3px solid transparent" : ""};
-  border-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  border-image: ${(props) =>
+    props.about === 2
+      ? "linear-gradient(to right, rgba(109,0,255,0.25) 0%, rgba(123,63,228,0.55) 100%)"
+      : "linear-gradient(to right, #5ca9fb 0%, #6372ff 100%)"};
   border-image-slice: 1;
 `;
 export const Button = styled.a`

@@ -14,6 +14,7 @@ const Main = () => {
           subtitle={"Connect your wallet to get access & purchase a ticket..."}
         />
       )}
+
       <Outlet />
     </MainContainer>
   );

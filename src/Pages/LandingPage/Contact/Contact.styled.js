@@ -72,7 +72,7 @@ export const TextInput = styled.textarea`
   color: ${(props) => props.theme.colors.textColor};
   background-color: ${(props) => props.theme.colors.containerColor};
   box-shadow: ${(props) => props.theme.shadow};
-  padding: 0.63rem 0.75rem;
+  padding: 0.6rem 0.75rem;
   outline: none;
   border: 1px solid #ddd;
   height: ${(props) => props.height || "2.3rem"};

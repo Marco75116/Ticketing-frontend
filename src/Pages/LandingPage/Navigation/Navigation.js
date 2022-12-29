@@ -34,6 +34,7 @@ const Navigation = (props) => {
             POWERFULL
           </Item>
           <Item
+            about={selectedPart}
             selectedPart={selectedPart === 2}
             onClick={() => {
               props.about();
