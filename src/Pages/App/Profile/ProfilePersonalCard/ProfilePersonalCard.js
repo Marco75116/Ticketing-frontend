@@ -22,7 +22,7 @@ const ProfilePersonalCard = () => {
   return (
     <Wrapper>
       <CardProfile>
-        <Section titleSecontion={true}>
+        <Section bowShadow={"0 4px 2px -2px gray"}>
           <Title>profil</Title>
         </Section>
         <Section>
@@ -49,7 +49,7 @@ const ProfilePersonalCard = () => {
             </Analytic>
           </AnalyticsContent>
         </Section>
-        <Section>
+        <Section bowShadow={"0 0px 0px 0px gray"}>
           <TitlePart>add funds</TitlePart>
           <ButtonsWrapper>
             <Button>Credit card</Button>

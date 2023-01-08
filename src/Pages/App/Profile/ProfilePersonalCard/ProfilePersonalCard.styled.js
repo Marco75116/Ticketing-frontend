@@ -19,8 +19,7 @@ export const Title = styled.h2`
 `;
 export const Section = styled.div`
   padding: 0.75rem 1.5rem;
-  box-shadow: ${(props) =>
-    props.titleSecontion ? "0 4px 2px -2px gray" : "0 2px 2px -2px black"};
+  box-shadow: ${(props) => props.bowShadow || "0 2px 2px -2px black"};
 `;
 export const TitlePart = styled.h4`
   margin: 0.7rem 0;

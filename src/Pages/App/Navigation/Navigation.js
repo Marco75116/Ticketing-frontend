@@ -24,6 +24,11 @@ const Navigation = () => {
     disconnectWallet,
   } = useContext(WalletContext);
 
+  const alredyInProfilePage = () => {
+    if (window.location.href.split("/")[4] === "profil") return true;
+    else return false;
+  };
+
   const navigate = useNavigate();
 
   const hiddenAdress =
@@ -64,8 +69,16 @@ const Navigation = () => {
           </Button>
         </ContentContainer>
         {isWalletConnected && (
-          <IconProfilContainer>
-            <Link to={"/app/profile"}>
+          <IconProfilContainer
+            onClick={() => {
+              if (!alredyInProfilePage()) {
+                navigate("profil");
+              } else {
+                navigate(-1);
+              }
+            }}
+          >
+            <Link>
               <IconUser size="25" />
             </Link>
           </IconProfilContainer>
