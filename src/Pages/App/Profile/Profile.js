@@ -1,10 +1,13 @@
-import React, { useContext } from "react";
-import { WalletContext } from "../../../Context/Wallet.context";
+import React from "react";
+import { Wrapper } from "./Profile.styled";
+import ProfilePersonalCard from "./ProfilePersonalCard/ProfilePersonalCard";
 
 const Profile = () => {
-  const { balance } = useContext(WalletContext);
-
-  return <div>profile {balance}</div>;
+  return (
+    <Wrapper>
+      <ProfilePersonalCard />
+    </Wrapper>
+  );
 };
 
 export default Profile;

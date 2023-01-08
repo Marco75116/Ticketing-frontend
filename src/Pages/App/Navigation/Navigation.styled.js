@@ -12,7 +12,14 @@ export const NavigationContainer = styled.div`
   z-index: 10;
   color: #fff;
   background-color: #5ca9fb;
-  background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background-image: linear-gradient(
+    to right,
+    #5ca9fb 0%,
+    #6372ff 25%,
+    #6372ff 50%,
+    #6372ff 75%,
+    #5ca9fb 100%
+  );
   display: flex;
 `;
 export const ContentContainer = styled.div`
