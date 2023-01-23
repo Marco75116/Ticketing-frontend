@@ -3,6 +3,7 @@ import { WalletContext } from "../../../Context/Wallet.context";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
 import { Link, useNavigate } from "react-router-dom";
+import { HomeContext } from "../../../Context/Home.context";
 import {
   NavigationContainer,
   ContentContainer,
@@ -23,6 +24,7 @@ const Navigation = () => {
     getConnectedWallet,
     disconnectWallet,
   } = useContext(WalletContext);
+  const { setShowForm } = useContext(HomeContext);
 
   const alredyInProfilePage = () => {
     if (window.location.href.split("/")[4] === "profil") return true;
@@ -42,7 +44,13 @@ const Navigation = () => {
           <Menu>
             <Item>Games</Item>
             <Item>Club</Item>
-            <Item>+</Item>
+            <Item
+              onClick={() => {
+                setShowForm((prev) => !prev);
+              }}
+            >
+              +
+            </Item>
           </Menu>
 
           <Button
