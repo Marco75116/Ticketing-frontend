@@ -7,8 +7,6 @@ export const Card = styled.div`
   width: 100%;
   height: auto;
   border: 3px solid transparent;
-  border-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
-  border-image-slice: 1;
   margin: 0 22rem;
   padding: 1.5rem 6rem;
   display: flex;

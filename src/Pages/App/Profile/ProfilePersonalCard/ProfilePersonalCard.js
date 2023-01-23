@@ -15,10 +15,11 @@ import {
   ButtonsWrapper,
   Button,
   NumberAnalitic,
+  IconGame,
 } from "./ProfilePersonalCard.styled";
 
 const ProfilePersonalCard = () => {
-  const { balance } = useContext(WalletContext);
+  const { balance, balanceGame } = useContext(WalletContext);
   return (
     <Wrapper>
       <CardProfile>
@@ -26,11 +27,15 @@ const ProfilePersonalCard = () => {
           <Title>profil</Title>
         </Section>
         <Section>
-          <TitlePart>your balance</TitlePart>
+          <TitlePart>your balances</TitlePart>
           <BalanceContent>
             <AmountContainer>
-              <Balance>{balance}</Balance>
+              <Balance>{parseFloat(balance).toFixed(3)}</Balance>
               <IconMatic size="30" />
+            </AmountContainer>
+            <AmountContainer>
+              <Balance>{parseFloat(balanceGame).toFixed(3)}</Balance>
+              <IconGame size="30" />
             </AmountContainer>
           </BalanceContent>
         </Section>

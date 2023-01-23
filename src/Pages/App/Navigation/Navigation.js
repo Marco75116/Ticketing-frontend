@@ -42,6 +42,7 @@ const Navigation = () => {
           <Menu>
             <Item>Games</Item>
             <Item>Club</Item>
+            <Item>+</Item>
           </Menu>
 
           <Button

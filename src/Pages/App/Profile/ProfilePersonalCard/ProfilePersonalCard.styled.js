@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Matic } from "@styled-icons/crypto/Matic";
+import { Ticket } from "@styled-icons/entypo/Ticket";
 
 export const Wrapper = styled.div`
   display: inline-block;
@@ -43,6 +44,10 @@ export const AmountContainer = styled.div`
   margin: 1rem 0;
 `;
 export const IconMatic = styled(Matic)`
+  color: rgba(123, 63, 228);
+  margin-right: 1rem;
+`;
+export const IconGame = styled(Ticket)`
   color: rgba(123, 63, 228);
   margin-right: 1rem;
 `;
