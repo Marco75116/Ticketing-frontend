@@ -23,7 +23,7 @@ const FormGame = () => {
 
   return (
     <Card>
-      <Title>Create Your Party</Title>
+      <Title>Create Your Game</Title>
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Input
           placeholder="Name"

@@ -31,3 +31,7 @@ export const createNewGame = async (name, symbol, ticketPrice, supply) => {
     return false;
   }
 };
+
+export const compareTwoAddresses = (a, b) => {
+  return ethers.utils.getAddress(a) === ethers.utils.getAddress(b);
+};

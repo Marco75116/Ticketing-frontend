@@ -1,9 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useMemo } from "react";
 import { WalletContext } from "../../../Context/Wallet.context";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
 import { Link, useNavigate } from "react-router-dom";
 import { HomeContext } from "../../../Context/Home.context";
+import { owner } from "../../../utils/Constants/adress/ownerAdress";
+import { compareTwoAddresses } from "../../../utils/ethers/ethers";
 import {
   NavigationContainer,
   ContentContainer,
@@ -31,6 +33,14 @@ const Navigation = () => {
     else return false;
   };
 
+  const OwnerConnected = useMemo(() => {
+    if (currentWalletAddress != "") {
+      setShowForm(false);
+      return compareTwoAddresses(owner, currentWalletAddress);
+    }
+    return false;
+  }, [owner, currentWalletAddress]);
+
   const navigate = useNavigate();
 
   const hiddenAdress =
@@ -44,13 +54,16 @@ const Navigation = () => {
           <Menu>
             <Item>Games</Item>
             <Item>Club</Item>
-            <Item
-              onClick={() => {
-                setShowForm((prev) => !prev);
-              }}
-            >
-              +
-            </Item>
+            {OwnerConnected && (
+              <Item
+                onClick={() => {
+                  setShowForm((prev) => !prev);
+                  navigate("/app");
+                }}
+              >
+                +
+              </Item>
+            )}
           </Menu>
 
           <Button
@@ -81,6 +94,7 @@ const Navigation = () => {
           <IconProfilContainer
             onClick={() => {
               if (!alredyInProfilePage()) {
+                setShowForm(false);
                 navigate("profil");
               } else {
                 navigate(-1);
