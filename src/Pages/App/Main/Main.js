@@ -5,6 +5,7 @@ import { MainContainer } from "./Main.styled";
 import ConnectWalletCard from "./ConnectWalletCard/ConnectWalletCard";
 import FormGame from "./FormGame/FormGame";
 import { Outlet } from "react-router-dom";
+import GraphExample from "../../../utils/API/graphqlExmple";
 
 const Main = () => {
   const { isWalletConnected } = useContext(WalletContext);
@@ -19,6 +20,7 @@ const Main = () => {
         />
       )}
       {showForm && <FormGame />}
+      <GraphExample />
       <Outlet />
     </MainContainer>
   );
